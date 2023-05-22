@@ -1,0 +1,496 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffd372;
+    font-family: poppins, sans-serif;
+    margin: 0;
+}
+
+/**************************** NAV BAR ******************************/
+
+nav{
+    background-color: #D58BDD;
+    color: #905e96;
+    font-style: bolder;
+    border-bottom: 3px solid #c0c0c0;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0;
+    padding: 15px 50px 0;
+}
+
+.center-nav-links{
+    display: flex;
+    text-align: center; 
+}
+
+.center-link{
+    padding: 0 25px;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.mail-icon{
+    max-width: 100%;
+    font-size: 3.5rem;
+}
+
+/**************************** Anchor Tags *****************************/
+
+a{
+    text-decoration: none;
+}
+ a:link{
+    color: #905e96;
+ }
+
+ a:visited{
+    color: #905e96;
+ }
+
+ a:hover{
+    color: #4d3050;
+ }
+
+ .project-link:hover{
+    color: #905e96;
+    cursor: pointer;
+ }
+
+ .project-link:visited{
+    color: #000;
+ }
+
+ /**************************** HEADINGS ******************************/
+
+ h1, h2, h3, h4, h5, h6{
+    color: #905e96;
+ }
+
+h1{
+    font-size: 5em;
+    max-width: 40%;
+    display: inline-block;
+    letter-spacing: 10%;
+    line-height: 137px;
+    margin: 100px 184px 0;
+}
+
+h2{
+    font-size: 3rem;
+    max-width: 30%;
+    text-decoration: underline;
+    margin: 0 184px;
+}
+
+h3{
+    display: block;
+    font-size: 2rem;
+    max-width: 35%;
+    margin: 0 184px;
+    text-decoration: underline;
+    margin: 0 184px 50px;
+}
+
+h4{
+    font-size: 28px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.contact-me-heading{
+    display: flex;
+    justify-content: center;
+    font-size: 72px;
+    padding: 40px 0;
+    margin: auto;
+}
+
+.title-pic{
+    display: flex;
+    justify-content: space-between;
+}
+
+/**************************** IMAGES ******************************/
+
+#profile-pic{
+    margin: 100px 184px 100px 0;
+    width: 380px;
+}
+  
+.project-img{
+    border-radius: 15px;
+    white-space: nowrap; 
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/****************************** PAGE ELEMENTS *************************/
+
+button{
+    background-color: #fff;
+    border: 5px solid #c0c0c0;
+    border-radius: 50px;
+    box-shadow: 0px 9px 12px #905e96;
+    color: #905e96;
+    display: inline-block;
+    font-size: 45px;
+    padding: 16px 48px;
+    margin-right: 50px;
+}
+
+ button:hover{
+    background-color: #c0c0c0;
+    cursor: pointer;
+ }
+
+.bio-btn{
+    margin: 0 150px;
+}
+
+.more-projects-btn{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+    margin: 15px 184px;
+    position: relative;
+    left: 65%;
+}
+
+.contact-btn{
+    font-size: 20px;
+}
+
+.contact-me-text{
+    font-size: 45px;
+    font-weight: 600;
+    color: #905e96;
+}
+
+.bio-info{
+    background-color: #fbfacd;
+    color: #905e96;
+    margin: 40px 184px;
+    padding: 40px;
+}
+
+.des-cards, .dev-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 184px;
+}
+
+.card{
+    background-color: #fbfacd;
+    border: 3px solid #c0c0c0;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    max-width: 30%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    width: 50%;
+}
+
+.project-text{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #c0c0c0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+
+.card:hover .overlay {
+    height: 100%;
+  }
+
+.gmail-circle{
+    background-color: #FBFACD;
+    border-radius: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 20px;
+}
+
+/****************************** SECTIONS *****************************/
+
+.bio-section{
+    background-color: #FFD372;
+    margin: 0 184px;
+}
+
+#designer-section{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#developer-section{
+    background-color: #FFD372;
+    margin-bottom: 10px;
+}
+
+#contact-me-section{
+    display: flex;
+    flex-direction: column;
+    background-color: #bda3ce;
+    max-width: 100%;
+    padding-bottom: 50px;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background-color: #D58BDD;
+    color: #905e96;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 600;
+    padding: 50px 0;
+}
+
+.footer-icons{
+    max-width: 100%;
+    font-size: 3rem;
+    color: #905e96;
+    letter-spacing: 1.2rem;
+}
+
+.footer-text-right{
+    padding: 0 15px 0 0;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px 184px;
+}
+
+.email-form, .subject-form{
+    background-color: #FBFACD;
+    border: none;
+    border-radius: 15px;
+    color: #363636;
+    font-size: 30px;
+    max-height: 70px;
+    max-width: 30%;
+    padding: 10px 0 10px 50px;
+    margin: 0 0 20px;
+}
+
+.message-form{
+    background-color: #FBFACD;
+    border:none;
+    border-radius: 15px;
+    color: #363636;
+    font-size: 30px;
+    height: 359px;
+    padding: 0 0 10px 50px; 
+}
+
+/*************************** MEDIA QUERIES ****************************/
+
+
+
+
+/***************** iPad/Smaller Screen dimensions *********************/
+
+@media (min-width: 768px) and (max-width: 1330px) {
+
+/******************************** NAV BAR *****************************/
+    .center-link{
+        padding: 0 12px;
+    }
+
+ /**************************** HEADINGS ******************************/
+
+h1{
+    font-size: 3.5em;
+    max-width: 55%;
+    display: inline-block;
+    letter-spacing: 5%;
+    line-height: 85px;
+    margin: 75px;
+}
+
+h2{
+    font-size: 2rem;
+    max-width: 35%;
+    margin: 0 75px;
+}
+
+h3{
+    font-size: 2rem;
+    max-width: 30%;
+}
+
+h4{
+    font-size: 1.2rem;
+}
+
+.contact-me-heading{
+    font-size: 60px;
+}
+
+/**************************** IMAGES ******************************/
+
+#profile-pic{
+    margin: 100px;
+    width: 340px;
+    height: 340px;
+}
+
+/****************************** PAGE ELEMENTS *************************/
+
+button{
+    background-color: #fff;
+    border: 5px solid #c0c0c0;
+    border-radius: 50px;
+    box-shadow: 0px 9px 12px #905e96;
+    color: #905e96;
+    display: inline-block;
+    font-size: 45px;
+    padding: 16px 48px;
+    margin-right: 50px;
+}
+
+.bio-btn{
+    display: flex;
+    margin: 0 75px;
+}
+
+.bio-info{
+    background-color: #fbfacd;
+    color: #905e96;
+    margin: 40px 75px;
+    padding: 40px;
+}
+
+.des-cards, .dev-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 75px;
+}
+
+.card{
+    height: auto;
+}
+
+.gmail-circle{
+    background-color: #FBFACD;
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: auto;
+    margin-bottom: 20px;
+}
+
+
+/****************************** SECTIONS *****************************/
+
+#designer-section{
+    margin-bottom: 50px;
+}
+
+footer{
+    font-weight: 500;
+    padding: 50px;
+}
+
+.footer-icons{
+    font-size: 1.2rem;
+}
+
+.footer-text-right{
+    padding-right: 8px;
+}
+
+.contact-form{
+    padding: 10px 75px;
+}
+
+.email-form, .subject-form{
+    font-size: 22px;
+    padding: 10px 0 10px 30px;
+}
+
+.message-form{
+    font-size: 22px;
+    padding: 0 0 10px 30px; 
+}
+}
+
+/******************* MORE PROJECTS BTN MEDIA QUERY *******************/
+
+@media (min-width: 1220px) and (max-width: 1600px) {
+    
+    .more-projects-btn{
+        left: 60%;
+    }
+
+}
+
+@media (min-width: 1060px) and (max-width: 1219px) {
+    
+    .more-projects-btn{
+        left: 55%;
+    }
+
+}
+
+@media (min-width: 850px) and (max-width: 1059px) {
+    
+    .more-projects-btn{
+        left: 45%;
+    }
+
+}
+
+@media (min-width: px) and (max-width: 849px) {
+    
+    .more-projects-btn{
+        left: 40%;
+    }
+}
